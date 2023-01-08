@@ -11,7 +11,7 @@ import shutil
 import sys
 #----------------------------------nativePlatformProfilier-----------------------------------
 def installation():
-    os.system("sudo apt update")
+    os.system("sudo apt update && apt-get -y install sudo")
     os.system("sudo apt install python3-pip")
     os.system("sudo pip3 install -e .")
 
